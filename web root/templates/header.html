@@ -1,0 +1,42 @@
+<?php // Script 13.3 - header.html
+
+//Include the functions script:
+include('includes/functions.php'); ?>
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" media="all" href="css/style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<title><?php //print the page title.
+	if (defined('TITLE')) { //Is the title defined?
+		print TITLE;
+	} else { //The title is not defined
+		print 'My Site of Quotes';
+	}
+	?></title>
+</head>
+
+<body style="width: 80%; margin: 0 auto;">
+	<div id="container">
+	<h1>My Site of Quotes</h1>
+	<br>
+	<nav class="nav navbar-nav">
+		<div class="container-fluid">
+
+			<div>
+				<ul class="nav navbar-nav">
+					<li><a class="active" href="index.php">Home</a></li>
+					<li><a href="login.php">Login</a></li>
+				</ul>
+			</div>
+	
+		</div>
+	</nav>
+	<br>
+	<br>
+	<!-- BEGIN CHANGEABLE CONTENT. -->
+	
